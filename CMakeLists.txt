@@ -19,12 +19,14 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(Boost REQUIRED)
 
 add_executable(ros2BubbleRob src/ros2BubbleRob.cpp)
 target_include_directories(ros2BubbleRob PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 ament_target_dependencies(ros2BubbleRob std_msgs rclcpp)
+target_link_libraries(ros2BubbleRob Boost::headers)
 
 install(TARGETS ros2BubbleRob
   EXPORT export_${PROJECT_NAME}

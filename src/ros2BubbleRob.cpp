@@ -12,7 +12,6 @@ class BubbleRobNode : public rclcpp::Node
 {
 private:
     bool sensorTrigger=false;
-    struct timeval tv;
     unsigned int currentTimeUpdated=0;
     float simulationTime=0.0;
     float driveBackStartTime=-99.0f;
