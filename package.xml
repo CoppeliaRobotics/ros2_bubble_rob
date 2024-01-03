@@ -4,7 +4,7 @@
   <name>ros2_bubble_rob</name>
   <version>0.0.0</version>
   <description>CoppeliaSim ROS2 BubbleRob node</description>
-  <maintainer email="marc@coppeliarobotics.com">Marc</maintainer>
+  <maintainer email="info@coppeliarobotics.com">Coppelia</maintainer>
   <license>BSD2</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
